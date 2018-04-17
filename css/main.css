@@ -1,6 +1,8 @@
 body {
-    margin: 60px auto;
+    /* margin: 60px auto; */
+    margin: 0 auto;
     width: 70%;
+    background-image: url('http://photovide.com/wp-content/uploads/2015/03/national-geographic-03-2015-12.jpg');
 }
 
 nav ul, footer ul {
@@ -14,6 +16,7 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
