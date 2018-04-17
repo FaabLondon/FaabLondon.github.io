@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Fabienne Prouteau Portfolio</title>
   </head>
   <body>
@@ -15,10 +16,11 @@
         <li><a class="navLink" href="#experience">Experience</a></li>
         <li><a class="navLink" href="#education">Education</a></li>
         <li><a class="navLink" href="#portfolio">Portfolio</a></li>
+        <li><a class="navLink" href="#interests">Interests</a></li>
       </ul>
     </nav>
-    <div class="container">
-      <div id="home" class="page">
+    <div>
+      <div id="home" class="page parallax">
         <h1>Fabienne Prouteau</h1>
         <h2>Web Developer</h2>
       </div>
@@ -27,18 +29,128 @@
       </a>
       <div id="about" class="page">
         <h1>About me</h1>
+        <img class="ProfilePic" src="./assets/picture/FabienneP.jpeg" alt="profile picture">
+        <p class="ShortDescription">I am half-French, half-Dutch and have been living in London for 12 years. I am an experienced consultant and sales person with a MBA and MSc in Computer Science. </p>
+        <p class="ShortDescription">I came to realise that in all my positions, I enjoyed myself most when I was programming and building new tools to solve business challenges and improve efficiency. I therefore decided to go back to what I like most, coding. I really enjoy the craftsmanship, creativity and problem solving that come with it, as well as the continuous learning process.
+        </p>
+        <p class="ShortDescription">
+        GA gave me the opportunity to be part of their web development immersive course and I haven’t looked back. I am looking forward to joining an innovative company with strong work ethics, that promotes diversity and puts a strong emphasis on developing its employees.
+        </p>
       </div>
-      <div id="skills" class="page">
+      <a href="#skills" class="chevron">
+        <i class="fas fa-chevron-down fa-4x"></i>
+      </a>
+      <div id="skills" class="page parallax">
         <h1>Skills</h1>
+        <section class="skills">
+          <div class="skillSub">
+            <h2 class="skillTitle">Front End
+              <i class="devicon-devicon-plain"></i>
+            </h2>
+            <ul>
+              <li>HTML5, CSS3, SCSS, Flexbox grid, Bulma</li>
+              <li>JavaScript (ES6)</li>
+              <li>React.js</li>
+              <li>AngularJS</li>
+              <li>APIs, AJAX</li>
+              <li>jQuery, EJS, JSX, JSON</li>
+            </ul>
+          </div>
+          <div class="skillSub">
+            <h2 class="skillTitle">Back End
+              <i class="fas fa-server"></i>
+            </h2>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>noSQL DB (MongoDB/Mongoose)</li>
+              <li>JWT authentication</li>
+            </ul>
+          </div>
+          <div class="skillSub">
+            <h2 class="skillTitle">Automated testing
+              <i class="fas fa-check-square"></i>
+            </h2>
+            <ul>
+              <li>Mocha testing framework</li>
+              <li>Chai Assertion library</li>
+              <li>SuperTest</li>
+              <li>Enzyme</li>
+            </ul>
+          </div>
+          <div class="skillSub">
+            <h2 class="skillTitle">Tools & Methodologies
+              <i class="fas fa-wrench"></i>
+            </h2>
+            <ul>
+              <li>Yarn, npm</li>
+              <li>Gulp, Webpack, Babel</li>
+              <li>Git, Github, Heroku</li>
+              <li>Agile methodologies, RESTful web services, CRUD methods</li>
+              <li>MVC framework, responsive web design, Trello</li>
+              <li>Pair programming, daily stand-up</li>
+            </ul>
+          </div>
+          <div class="skillSub">
+            <h2 class="skillTitle">Other
+              <i class="fas fa-ellipsis-h"></i>
+            </h2>
+            <ul>
+              <li>Atom Editor, Balsamiq, Matlab</li>
+              <li>SPSS, Google Analytics, Office suite</li>
+              <li>Technologies/languages used in the past: </li>
+              <li>C, C++, Java</li>
+              <li>Oracle DB, SQL Server, MySQL</li>
+              <li>Lisp, Assembly language</li>
+            </ul>
+          </div>
+        </section>
       </div>
+      <a href="#experience" class="chevron">
+        <i class="fas fa-chevron-down fa-4x"></i>
+      </a>
       <div id="experience" class="page">
         <h1>Experience</h1>
+        <div class="timeline" >
+          <div class="container left">
+            <div class="content">
+              <h3>Jan 2015 - Jan 2018 - Acqua di Parma (LVMH), London, UK</h3>
+              <p>Key account manager for the 5 largest retailers for Acqua di Parma in the UK, including John Lewis, House of Fraser, Selfridges, Harvey Nichols representing a retail value of £12m. Responsibilities included 3Y strategic planning, investment plan, annual forecasts, new launch strategy, negotiation on sell-in, assortment, space/location, sites and staffing.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>Mar 2010 – Dec 2014 - Freelance consultant & consultant at ZS Associates, London, UK</h3>
+              <p>Completed 30+ projects in Europe for biotech, medical device, consumer healthcare and Nutrition companies in the fields of marketing and sales, including: Sales force effectiveness, Market Research, opportunity assessment/product launch, sales force sizing and alignment, Process reengineering and change management.
+              </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h3>Oct 2006 – Aug 2009 - Commerzbank- Corporate & Capital Markets, London, UK</h3>
+              <p>Sales Assistant and Sales on structured derivatives for Benelux (Private Banking and Institutional Sales Team) - Responsible for selling a broad range of financial products to institutional clients in Benelux.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3>For my complete work history see my <a href="https://www.linkedin.com/in/fabienne-prouteau/">LinkedIn profile.</a></h3>
       </div>
-      <div id="education" class="page">
+      <a href="#education" class="chevron">
+        <i class="fas fa-chevron-down fa-4x"></i>
+      </a>
+      <div id="education" class="page parallax">
         <h1>Education</h1>
+
       </div>
+      <a href="#portfolio" class="chevron">
+        <i class="fas fa-chevron-down fa-4x"></i>
+      </a>
       <div id="portfolio" class="page">
         <h1>Portfolio</h1>
+      </div>
+      <div id="interests" class="page">
+        <h1>Interests</h1>
       </div>
     </div>
     <footer>
@@ -47,5 +159,6 @@
       <li><a href="https://github.com/FaabLondon">github.com/FaabLondon</a></li>
       </ul>
     </footer>
+    <script src="/js/app.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,31 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
 body, html{
   display: block;
   position: relative;
   font-family: 'Nunito Sans', sans-serif;
-  color: #999;
-  height: 100%;
+  color: #aaaaaa;
 }
 
-body::after {
-    /* margin: 60px auto; */
-    /* width: 70%; */
-    height: 100%;
-    content: "";
-    background-image: url('http://photovide.com/wp-content/uploads/2015/03/national-geographic-03-2015-12.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    margin: 0 auto;
-    height: 85vh;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+div.page{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative; /* for opacity */
 }
+
+div.parallax::after{
+  height: 90vh;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0 auto;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+div#experience.page{
+  height: 130vh;
+}
+
+/* 1st page */
+div#home::after {
+    background-image: url('http://photovide.com/wp-content/uploads/2015/03/national-geographic-03-2015-12.jpg');
+    /* http://topwallpaperhd.com/wp-content/uploads/2018/03/paris-eiffel-tower-hd-wallpapers-and-images-6.jpg */
+}
+
+/* 3rd page */
+div#skills::after {
+    background-image: url('https://www.travelanddestinations.com/wp-content/uploads/2017/03/Houses-of-Parliament-at-sunset-London.jpg');
+}
+
+/* 5th page */
+div#education::after {
+    background-image: url('https://i.pinimg.com/originals/a0/25/4b/a0254b4477d2e340ae4ac80fa28a1670.jpg');
+}
+
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
@@ -34,12 +63,19 @@ body::after {
     }
 }
 
+/* Navbar */
+
 nav{
   text-align: right;
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -50,11 +86,23 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 
+a.navLink {
+    text-decoration: none;
+    color: #aaaaaa;
+    font-size: 1.2em;
+}
+
+a.navLink:hover {
+    text-decoration: underline;
+}
+
+/* Intro page */
+
 a.chevron{
   margin: 0 auto;
   height: 10vh;
   width: 10vw;
-  color: #999;
+  color: #aaaaaa;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -74,45 +122,183 @@ a.chevron{
   }
 }
 
-a.navLink {
-    text-decoration: none;
-    color: #999;
-    font-size: 1.5em;
-}
-
-a.navLink:hover {
-    text-decoration: underline;
-}
-
-/* div container */
-
-div.container{
-
-}
-
-div.page{
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 h2 {
     font-size: 2em;
     display: inline;
 }
 
-
 h1 {
     font-size: 3em;
+    margin-top: 45px;
 }
 
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+p.ShortDescription {
+    padding: 0 200px;
+    font-size: 1.2em;
+    line-height: 1.8em;
     color: #333;
 }
+
+/* Skills page */
+
+li{
+  font-size: 1em;
+}
+
+img.ProfilePic{
+  border-radius: 100px;
+}
+
+section.skills{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+div.skillSub{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2.skillTitle{
+  margin-bottom: 0;
+}
+
+div.skillSub ul{
+  list-style: none;
+  text-align: center;
+}
+
+/* Experience - timeline page */
+/* The actual timeline (the vertical ruler) */
+div.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+div.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #aaaaaa;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+div.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: #ffffff;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+div.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #aaaaaa;
+  border: 4px solid #FF3388;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+div.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+div.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+div.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #aaaaaa;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #aaaaaa;
+}
+
+/* Add arrows to the right container (pointing left) */
+div.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #aaaaaa;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #aaaaaa transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+div.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+div.content {
+  padding: 20px 30px;
+  background-color: #aaaaaa;
+  position: relative;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  div.timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  div.container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  div.container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  div.left::after, div.right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  div.right {
+    left: 0%;
+  }
+}
+
+/* Footer */
 
 footer {
     border-top: 1px solid #d5d5d5;
