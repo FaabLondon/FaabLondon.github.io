@@ -3,6 +3,8 @@ body {
     margin: 0 auto;
     width: 70%;
     background-image: url('http://photovide.com/wp-content/uploads/2015/03/national-geographic-03-2015-12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav ul, footer ul {
