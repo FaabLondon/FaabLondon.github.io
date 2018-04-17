@@ -1,10 +1,41 @@
-body {
+body, html{
+  display: block;
+  position: relative;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #999;
+  height: 100%;
+}
+
+body::after {
     /* margin: 60px auto; */
-    margin: 0 auto;
-    width: 70%;
-    /* background-image: url('http://photovide.com/wp-content/uploads/2015/03/national-geographic-03-2015-12.jpg');
+    /* width: 70%; */
+    height: 100%;
+    content: "";
+    background-image: url('http://photovide.com/wp-content/uploads/2015/03/national-geographic-03-2015-12.jpg');
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0 auto;
+    height: 85vh;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    body::after {
+        background-attachment: scroll;
+    }
+}
+
+nav{
+  text-align: right;
 }
 
 nav ul, footer ul {
@@ -19,18 +50,62 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 
-a {
-    text-decoration: none;
-    color: #999;
+a.chevron{
+  margin: 0 auto;
+  height: 10vh;
+  width: 10vw;
+  color: #999;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 1s linear infinite;
 }
 
-a:hover {
+@keyframes bounce {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a.navLink {
+    text-decoration: none;
+    color: #999;
+    font-size: 1.5em;
+}
+
+a.navLink:hover {
     text-decoration: underline;
 }
 
+/* div container */
+
+div.container{
+
+}
+
+div.page{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+    font-size: 2em;
+    display: inline;
+}
+
+
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 p {
