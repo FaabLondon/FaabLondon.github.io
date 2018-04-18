@@ -298,6 +298,53 @@ div.content {
   }
 }
 
+/* Education */
+
+section.education{
+  display: flex;
+}
+
+div.educationSub{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.logo{
+  width: 200px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+div.generalAssembly{
+  background-image: url('../assets/picture/general-assembly.png');
+}
+
+div.essec{
+  background-image: url('../assets/picture/essec.png');
+}
+
+div.delftLogo{
+  background-image: url('../assets/picture/tu-delft.png');
+}
+
+div.utcLogo{
+  background-image: url('../assets/picture/utc-logo.png');
+}
+
+h3{
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+p.education{
+  text-align: center;
+}
+
+
 /* Footer */
 
 footer {
