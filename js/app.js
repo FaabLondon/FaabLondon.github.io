@@ -11,3 +11,20 @@ function scrollFunction() {
     document.querySelector('nav').style.top = '-50px';
   }
 }
+
+//set click event to display more info on all projects
+const nbProject = 4;
+for (let i = 1 ; i <= nbProject; i++){
+  const clickInfo = document.querySelector(`#clickforInfo${i}`);
+  const info = document.querySelector(`#info${i}`);
+  const deleteCheckbox = document.querySelector(`#deleteCheckbox${i}`);
+  //add click even to 'Click for more details'
+  clickInfo.addEventListener('click', () => {
+    info.classList.toggle('animation');
+    console.log('click');
+  });
+  //add click even to close checkmark
+  deleteCheckbox.addEventListener('click', () => {
+    info.classList.toggle('animation');
+  });
+}

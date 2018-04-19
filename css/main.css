@@ -39,10 +39,14 @@ div#experience.page{
   height: 130vh;
 }
 
+/* this is on mobile - adapt responsiveness...as for Desktop small height is oK */
+div#portfolio.page{
+  height: 400vh;
+}
+
 /* 1st page */
 div#home::after {
     background-image: url('http://photovide.com/wp-content/uploads/2015/03/national-geographic-03-2015-12.jpg');
-    /* http://topwallpaperhd.com/wp-content/uploads/2018/03/paris-eiffel-tower-hd-wallpapers-and-images-6.jpg */
 }
 
 /* 3rd page */
@@ -53,6 +57,11 @@ div#skills::after {
 /* 5th page */
 div#education::after {
     background-image: url('https://i.pinimg.com/originals/a0/25/4b/a0254b4477d2e340ae4ac80fa28a1670.jpg');
+}
+
+/* 7th page */
+div#interests::after {
+    background-image: url('http://www.danintranet.org/storymedia/20280.jpg');
 }
 
 
@@ -338,15 +347,77 @@ div.utcLogo{
 h3{
   margin-bottom: 0px;
   text-align: center;
+  font-weight: 900;
 }
 
 p.education{
   text-align: center;
 }
 
+/* Portfolio */
+
+section.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 500px;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.containerCard {
+    padding: 2px 16px;
+    height: 200px;
+    position: relative;
+    overflow: hidden; /* so that text outside container is hidden */
+}
+
+div.title{
+  padding: 20px;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+
+div.info{
+  padding: 20px;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  right: -100%;
+  opacity: 0;
+}
+
+div.animation{
+  right: 0%;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+span.deleteCheckbox{
+  float: right;
+}
+
 
 /* Footer */
-
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
