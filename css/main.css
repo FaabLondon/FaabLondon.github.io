@@ -49,8 +49,10 @@ div#home {
   height: 90vh;
   width: 60vw;
   position: relative;
-  left: 100px;
-  top: 40px;
+  /* left: 100px;
+  top: 40px; */
+  left: 7vw;
+  top: 6vh;
 }
 
 /* TRANSITION */
@@ -62,12 +64,14 @@ div#home {
 } */
 
 #d1{
-  height: 200px;
-  width: 150px;
+  /* height: 200px;
+  width: 150px; */
+  height: 30vh;
+  width: 13vw;
   box-shadow: 0px 0px 25px rgba(0,0,0,.5);
   position: absolute;
-  top: 150px;
-  left: 1px;
+  top: 20vh;
+  left: 2vw;
   background-size: 1150px 650px;
   background-position: 0px -180px;
   z-index: 2;
@@ -76,32 +80,38 @@ div#home {
 #d2{
   height: 500px;
   width: 400px;
+  height: 75vh;
+  width: 34vw;
   position: absolute;
-  top: 80px;
-  left: 100px;
+  top: 11.5vh;
+  left: 12vw;
   background-size: 1150px 650px;
   background-position: -180px -80px;
   z-index: 1;
 }
 
 #d3{
-  height: 600px;
-  width: 400px;
+  /* height: 600px;
+  width: 400px; */
+  height: 90vh;
+  width: 34vw;
   box-shadow: 0px 0px 25px rgba(0,0,0,.5);
   position: absolute;
-  top: 0px;
-  left: 300px;
+  top: 0vh;
+  left: 25.5vw;
   background-size: 1150px 650px;
   background-position: -300px 0px;
   z-index: 3;
 }
 
 #d4{
-  height: 500px;
-  width: 400px;
+  /* height: 500px;
+  width: 400px; */
+  height: 75vh;
+  width: 34vw;
   position: absolute;
-  top: 30px;
-  left: 500px;
+  top: 4.2vh;
+  left: 42.5vw;
   background-size: 1150px 650px;
   background-position: -500px -30px;
   z-index: 1;
