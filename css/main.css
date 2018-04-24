@@ -55,10 +55,10 @@ div#home {
 
 #d1, #d2, #d3, #d4{
   /* TRANSITION */
-   -webkit-transition: background-image 1s linear;
-   -moz-transition: background-image 1s linear;
-   -o-transition: background-image 1s linear;
-   transition: background-image 1s linear;
+   -webkit-transition: all 1s linear;
+   -moz-transition: all 1s linear;
+   -o-transition: all 1s linear;
+   transition: all 1s linear;
 }
 
 #d1{
