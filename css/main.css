@@ -3,7 +3,6 @@
 }
 
 body, html{
-  /* width: auto; */
   display: block;
   position: relative;
   font-family: 'Nunito Sans', sans-serif;
@@ -68,6 +67,7 @@ div#home {
   box-shadow: 0px 0px 25px rgba(0,0,0,.5);
   position: absolute;
   top: 150px;
+  left: 5px;
   background-size: 1150px 650px;
   background-position: 0px -180px;
   z-index: 2;
@@ -108,14 +108,13 @@ div#home {
 }
 
 #content{
-  height: auto;
   width: 300px;
   letter-spacing: 5px;
   color: #777777;
   position: absolute;
-  right: -370px;
+  left: 930px;
   top: 200px;
-  z-index: 99;
+  z-index: -1;
 }
 
 /* 3rd page */
@@ -134,15 +133,7 @@ div#interests::after {
 }
 
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    body::after {
-        background-attachment: scroll;
-    }
-}
-
 /* Navbar */
-
 nav{
   text-align: right;
   position: fixed; /* Make it stick/fixed */
@@ -151,6 +142,12 @@ nav{
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   background-color: #ffffff;
   z-index: 4;
+}
+
+/* Footer  */
+
+footer{
+  height: 100px;
 }
 
 nav ul, footer ul {
@@ -499,4 +496,18 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+/* All Media query for responsiveness */
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    body::after {
+        background-attachment: scroll;
+    }
+
+    #content{
+      position: absol
+      right: -370px;
+      top: 200px;
+    }
 }
