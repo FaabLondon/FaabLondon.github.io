@@ -55,12 +55,12 @@ div#home {
 
 #d1, #d2, #d3, #d4{
   /* TRANSITION on div with pictures */
-  -webkit-perspective: 1000;
-  -webkit-backface-visibility: hidden;
-   -webkit-transition: background-image 1s ease-in-out;
+  /* -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden; */
+   /* -webkit-transition: background-image 1s ease-in-out;
    -moz-transition: background-image 1s ease-in-out;
    -o-transition: background-image 1s ease-in-out;
-   transition: background-image 1s ease-in-out;
+   transition: background-image 1s ease-in-out; */
 }
 
 #d1{
