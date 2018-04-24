@@ -3,10 +3,11 @@
 }
 
 body, html{
+  /* width: auto; */
   display: block;
   position: relative;
   font-family: 'Nunito Sans', sans-serif;
-  color: #aaaaaa;
+  color: #777777;
 }
 
 div.page{
@@ -41,7 +42,7 @@ div#experience.page{
 
 /* this is on mobile - adapt responsiveness...as for Desktop small height is oK */
 div#portfolio.page{
-  height: 400vh;
+  height: 200vh;
 }
 
 /* 1st page */
@@ -110,35 +111,26 @@ div#home {
   height: auto;
   width: 300px;
   letter-spacing: 5px;
-  color: #aaaaaa;
+  color: #777777;
   position: absolute;
   right: -370px;
   top: 200px;
   z-index: 99;
 }
 
-h2.caption{
-  opacity:0;
-  -webkit-transition: opacity 1s linear;
-  -moz-transition: opacity 1s linear;
-  -o-transition: opacity 1s linear;
-  transition: opacity 1s linear;
-}
-
-
 /* 3rd page */
 div#skills::after {
-    background-image: url('https://www.travelanddestinations.com/wp-content/uploads/2017/03/Houses-of-Parliament-at-sunset-London.jpg');
+    background-image: url('../assets/picture/background-image-coding.jpg');
 }
 
 /* 5th page */
 div#education::after {
-    background-image: url('https://i.pinimg.com/originals/a0/25/4b/a0254b4477d2e340ae4ac80fa28a1670.jpg');
+    background-image: url('../assets/picture/education.jpeg');
 }
 
 /* 7th page */
 div#interests::after {
-    background-image: url('http://www.danintranet.org/storymedia/20280.jpg');
+    background-image: url('../assets/picture/interests.jpg');
 }
 
 
@@ -174,7 +166,7 @@ nav ul li, footer ul li {
 
 a.navLink {
     text-decoration: none;
-    color: #aaaaaa;
+    color: #777777;
     font-size: 1.2em;
 }
 
@@ -188,7 +180,7 @@ a.chevron{
   margin: 0 auto;
   height: 10vh;
   width: 10vw;
-  color: #aaaaaa;
+  color: #777777;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -222,7 +214,7 @@ p.ShortDescription {
     padding: 0 200px;
     font-size: 1.2em;
     line-height: 1.8em;
-    color: #333;
+    color: #333333;
 }
 
 /* Skills page */
@@ -270,7 +262,7 @@ div.timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #aaaaaa;
+  background-color: #777777;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -292,7 +284,7 @@ div.container::after {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: #aaaaaa;
+  background-color: #777777;
   border: 4px solid #FF3388;
   top: 15px;
   border-radius: 50%;
@@ -318,9 +310,9 @@ div.left::before {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #aaaaaa;
+  border: medium solid #777777;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #aaaaaa;
+  border-color: transparent transparent transparent #777777;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -332,9 +324,9 @@ div.right::before {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #aaaaaa;
+  border: medium solid #777777;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #aaaaaa transparent transparent;
+  border-color: transparent #777777 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -345,7 +337,7 @@ div.right::after {
 /* The actual content */
 div.content {
   padding: 20px 30px;
-  background-color: #aaaaaa;
+  background-color: #777777;
   position: relative;
   color: #ffffff;
   border-radius: 6px;
