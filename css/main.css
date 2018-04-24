@@ -10,7 +10,7 @@ body, html{
 }
 
 div.page{
-  height: 90vh;
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@ div.page{
 }
 
 div.parallax::after{
-  height: 90vh;
+  height: 800px;
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,17 +36,17 @@ div.parallax::after{
 }
 
 div#experience.page{
-  height: 130vh;
+  height: 1200px;
 }
 
 /* this is on mobile - adapt responsiveness...as for Desktop small height is oK */
 div#portfolio.page{
-  height: 200vh;
+  height: 1500px;
 }
 
 /* 1st page */
 div#home {
-  height: 90vh;
+  height: 800px;
   width: 60vw;
   position: relative;
   left: 100px;
@@ -175,8 +175,8 @@ a.navLink:hover {
 
 a.chevron{
   margin: 0 auto;
-  height: 10vh;
-  width: 10vw;
+  height: 10px;
+  width: 10px;
   color: #777777;
   text-decoration: none;
   display: flex;
