@@ -46,9 +46,9 @@ h2 {
     display: inline;
 }
 
-h1 {
+/* h1 {
     margin-top: 45px;
-}
+} */
 
 a.chevron {
   margin: 0 auto;
@@ -96,16 +96,14 @@ div.parallax::after {
 /******************************* Homepage *************************************/
 
 div#homePage.columns.is-multiline{
-  margin-top: 10vh;
-  margin-left: 5vh;
+  margin: 0 2vw;
 }
 
 div#home {
   height: 90vh;
   width: 77vw;
   position: relative;
-  /* left: 2vw;
-  top: 8vh; */
+  margin-top: 10vh;
 }
 
 /* TRANSITION */
@@ -477,7 +475,7 @@ ul.posts li {
 
 /******************** Media queries for responsiveness ************************/
 
-@media only screen  and (max-width: 979px) { /* Tablet */
+@media only screen  and (max-width: 1023px) { /* Tablet and mobile*/
 
   /* Turn off parallax scrolling for all tablets and phones.
   Increase/decrease the pixels if needed */
@@ -485,43 +483,13 @@ ul.posts li {
       background-attachment: scroll;
   }
 
-  /* decrease font-size */
-  /* h2 {
-      font-size: 1rem;
+  /* Homepage*/
+  div#homePage.columns.is-multiline{
+    margin: 0 2vw;
   }
 
-  h1 {
-      font-size: 1.5rem;
-  }
-
-  p.ShortDescription {
-      font-size: 0.6em;
-  }
-
-  li{
-    font-size: 0.5em;
-  }
-
-  a.navLink {
-    font-size: 0.6em;
-  }
-
-  footer {
-      font-size: .4em;
-  }
-
-  ul.posts {
-      font-size: 0.75em;
-  } */
-}
-
-/* Media queries - Responsive timeline on screens less than 500px wide */
-
-@media screen and (max-width: 500px) { /* Mobile */
-  /* Turn off parallax scrolling for all tablets and phones.
-  Increase/decrease the pixels if needed */
-  body::after {
-    background-attachment: scroll;
+  div#home {
+    margin: 10vh auto 0;
   }
 
   /* decrease height div picture */
@@ -538,6 +506,9 @@ ul.posts li {
     height: 37.5vh;
   } */
 
+}
+
+@media only screen  and (max-width: 768px) { /* mobile*/
 
 /* Place the timelime to the left on Mobile*/
   div.timeline::after {
