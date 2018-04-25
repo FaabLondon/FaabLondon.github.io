@@ -51,9 +51,7 @@ h2 {
 } */
 
 a.chevron {
-  margin: 0 auto;
-  /* height: 10vh;
-  width: 10vw; */
+  margin: 5px auto;
   color: #777777;
   text-decoration: none;
   display: flex;
