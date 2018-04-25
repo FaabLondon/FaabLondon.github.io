@@ -52,8 +52,8 @@ h2 {
 
 a.chevron {
   margin: 0 auto;
-  height: 10vh;
-  width: 10vw;
+  /* height: 10vh;
+  width: 10vw; */
   color: #777777;
   text-decoration: none;
   display: flex;
@@ -100,7 +100,7 @@ div#homePage.columns.is-multiline{
 }
 
 div#home {
-  height: 90vh;
+  height: 80vh;
   /* width: 77vw; */
   position: relative;
   margin-top: 10vh;
@@ -524,6 +524,7 @@ ul.posts li {
 
 div#home {
   height: 40vh;
+  margin: 5vh auto 0;
 }
 
 /* Decrease height div picture */
