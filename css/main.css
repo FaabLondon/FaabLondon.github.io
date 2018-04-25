@@ -221,9 +221,8 @@ div.skillSub ul {
 /* Experience - timeline page */
 
 div#experience.page {
-  height: 130vh;
+  /* height: 130vh; */
 }
-
 
 /* The actual timeline (the vertical ruler) */
 div.timeline {
@@ -373,7 +372,7 @@ p.education {
 
 /* this is on mobile - adapt responsiveness...as for Desktop small height is oK */
 div#portfolio.page {
-  height: 200vh;
+  /* height: 200vh; */
 }
 
 section.projects {
@@ -483,6 +482,10 @@ ul.posts li {
       background-attachment: scroll;
   }
 
+  h1 {
+    margin-top: 1vh;
+  }
+
   /* Homepage*/
   div#homePage.columns.is-multiline{
     margin: 0 2vw;
@@ -515,14 +518,11 @@ ul.posts li {
     background-position: -270px -27px;
   }
 
-  /* skills */
-  div#home {
-    height: 100vh;
+  /* skills page */
+  div.skillSub {
+    margin: 2vh 5vh;
   }
 
-  div.skillSub {
-    margin: 1vh 0;
-  }
 }
 
 
@@ -552,6 +552,8 @@ div#home {
   height: 32.5vh;
   background-position: -280px -27px;
 }
+
+
 
 /* Place the timelime to the left on Mobile*/
   div.timeline::after {
