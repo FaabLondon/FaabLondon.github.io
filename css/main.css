@@ -101,7 +101,7 @@ div#homePage.columns.is-multiline{
 
 div#home {
   height: 90vh;
-  width: 77vw;
+  /* width: 77vw; */
   position: relative;
   margin-top: 10vh;
 }
@@ -489,24 +489,33 @@ ul.posts li {
   }
 
   div#home {
+    height: 50vh;
     margin: 10vh auto 0;
   }
 
-  /* decrease height div picture */
-  /* #d1{
+  /* Decrease height div picture */
+  #d1{
     height: 15vh;
+    background-size: 575px 325px;
+    background-position: 0px -90px;
   }
   #d2{
     height: 37.5vh;
+    background-size: 575px 325px;
+    background-position: -90px -40px;
   }
   #d3{
     height: 45vh;
+    background-size: 575px 325px;
+    background-position: -150px 0px;
   }
   #d4{
     height: 37.5vh;
-  } */
-
+    background-size: 575px 325px;
+    background-position: -270px -27px;
+  }
 }
+
 
 @media only screen  and (max-width: 768px) { /* mobile*/
 
