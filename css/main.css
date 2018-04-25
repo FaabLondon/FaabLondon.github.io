@@ -134,7 +134,7 @@ div#interests::after {
 
 
 /* Navbar */
-nav {
+nav.navbar {
   text-align: right;
   position: fixed; /* Make it stick/fixed */
   top: -50px; /* Hide the navbar 50 px outside of the top view */
@@ -150,24 +150,24 @@ footer {
   height: 10vh;
 }
 
-nav ul, footer ul {
+footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
 
-nav ul li, footer ul li {
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
 
-a.navLink {
+a.navLink.navbar-item {
     text-decoration: none;
     color: #777777;
     font-size: 1.2em;
 }
 
-a.navLink:hover {
+a.navLink.navbar-item:hover {
     text-decoration: underline;
 }
 
@@ -475,7 +475,7 @@ ul.posts li {
   }
 
   /* decrease font-size */
-  h2 {
+  /* h2 {
       font-size: 1rem;
   }
 
@@ -501,7 +501,7 @@ ul.posts li {
 
   ul.posts {
       font-size: 0.75em;
-  }
+  } */
 }
 
 /* Media queries - Responsive timeline on screens less than 500px wide */
@@ -514,7 +514,7 @@ ul.posts li {
   }
 
   /* decrease height div picture */
-  #d1{
+  /* #d1{
     height: 15vh;
   }
   #d2{
@@ -525,7 +525,7 @@ ul.posts li {
   }
   #d4{
     height: 37.5vh;
-  }
+  } */
 
 
 /* Place the timelime to the left on Mobile*/

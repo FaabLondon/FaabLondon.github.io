@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -11,17 +12,27 @@
     <title>Fabienne Prouteau Portfolio</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a class="navLink" href="#home">Home</a></li>
-        <li><a class="navLink" href="#about">About</a></li>
-        <li><a class="navLink" href="#skills">Skills</a></li>
-        <li><a class="navLink" href="#experience">Experience</a></li>
-        <li><a class="navLink" href="#education">Education</a></li>
-        <li><a class="navLink" href="#portfolio">Portfolio</a></li>
-        <li><a class="navLink" href="#interests">Interests</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end">
+          <a class="navLink navbar-item" href="#home">Home</a>
+          <a class="navLink navbar-item" href="#about">About</a>
+          <a class="navLink navbar-item" href="#skills">Skills</a>
+          <a class="navLink navbar-item" href="#experience">Experience</a>
+          <a class="navLink navbar-item" href="#education">Education</a>
+          <a class="navLink navbar-item" href="#portfolio">Portfolio</a>
+          <a class="navLink navbar-item" href="#interests">Interests</a>
+        </div>
+      </div>
     </nav>
+
     <div>
       <!-- removed page and parallax from class -->
       <!-- Added destructured picture instead -->

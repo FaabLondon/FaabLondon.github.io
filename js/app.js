@@ -37,10 +37,13 @@ $(document).ready(() => {
     caption: 'Keen skier'
   }
   ];
+
   //select the divs to set their backgroundImage and change text
   const $destructuredPic = $('.destructuredPic');
   const caption = $('.caption').get(0);
-
+  // Get "navbar-burger" element
+  const navbarBurger = $('.navbar-burger').get(0);
+  console.log(navbarBurger);
 
   //NAVBAR
   // When the user scrolls down 20px from the top of the document, slide down the navbar
@@ -57,6 +60,19 @@ $(document).ready(() => {
       $('nav').css({ top: '-50px' });
     }
   }
+
+  //Burger menu toggling on device
+  // Add  a click event ot NavBar Burger
+  $(navbarBurger).on('click', function () {
+    // Get the target from the "data-target" attribute
+    const target = navbarBurger.dataset.target; //should be navMenu
+    console.log(target);
+    const $target = $(target);
+
+    // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+    $(navbarBurger).toggleClass('is-active');
+    $target.toggleClass('is-active');
+  });
 
   //***************************************************************************
   //INTRO page
