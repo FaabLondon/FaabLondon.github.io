@@ -9,8 +9,32 @@ body, html {
   color: #777777;
 }
 
+/******************************* Navbar *************************************/
+
+nav.navbar {
+  text-align: right;
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: #ffffff;
+  z-index: 4;
+}
+
+a.navLink.navbar-item {
+    text-decoration: none;
+    color: #777777;
+    font-size: 1.2em;
+}
+
+a.navLink.navbar-item:hover {
+    text-decoration: underline;
+}
+
+/******************************* General layout *************************************/
+
 div.page {
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +42,42 @@ div.page {
   position: relative; /* for opacity */
 }
 
+h2 {
+    display: inline;
+}
+
+h1 {
+    margin-top: 45px;
+}
+
+a.chevron {
+  margin: 0 auto;
+  height: 10vh;
+  width: 10vw;
+  color: #777777;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: blink 3s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/******************************* Parallax *************************************/
+
 div.parallax::after {
-  height: 90vh;
+  /* height: 90vh; */
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,22 +93,19 @@ div.parallax::after {
   z-index: -1;
 }
 
-div#experience.page {
-  height: 130vh;
+/******************************* Homepage *************************************/
+
+div#homePage.columns.is-multiline{
+  margin-top: 10vh;
+  margin-left: 5vh;
 }
 
-/* this is on mobile - adapt responsiveness...as for Desktop small height is oK */
-div#portfolio.page {
-  height: 200vh;
-}
-
-/* 1st page */
 div#home {
   height: 90vh;
-  width: 60vw;
+  width: 77vw;
   position: relative;
-  left: 3vw;
-  top: 6vh;
+  /* left: 2vw;
+  top: 8vh; */
 }
 
 /* TRANSITION */
@@ -107,121 +162,40 @@ div#home {
   z-index: 1;
 }
 
-#content {
+div#content.column {
   width: 300px;
   letter-spacing: 5px;
   color: #777777;
-  position: absolute;
-  left: 75vw;
-  top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* position: absolute; */
+  /*left: 75vw; */
+  /* top: 25vh; */
   z-index: -1;
 }
 
-/* 3rd page */
-div#skills::after {
-    background-image: url('../assets/picture/background-image-coding.jpg');
-}
+/******************************* About Page *************************************/
 
-/* 5th page */
-div#education::after {
-    background-image: url('../assets/picture/education.jpeg');
-}
-
-/* 7th page */
-div#interests::after {
-    background-image: url('../assets/picture/interests.jpg');
-}
-
-
-/* Navbar */
-nav.navbar {
-  text-align: right;
-  position: fixed; /* Make it stick/fixed */
-  top: -50px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  background-color: #ffffff;
-  z-index: 4;
-}
-
-/* Footer  */
-
-footer {
-  height: 10vh;
-}
-
-footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-
-footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a.navLink.navbar-item {
-    text-decoration: none;
-    color: #777777;
-    font-size: 1.2em;
-}
-
-a.navLink.navbar-item:hover {
-    text-decoration: underline;
-}
-
-/* Intro page */
-
-a.chevron {
-  margin: 0 auto;
-  height: 10vh;
-  width: 10vw;
-  color: #777777;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: blink 3s linear infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-h2 {
-    font-size: 2rem;
-    display: inline;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-top: 45px;
+img.ProfilePic {
+  border-radius: 100px;
 }
 
 p.ShortDescription {
-    padding: 0 200px;
-    font-size: 1.2em;
+    padding: 0 15vw;
     line-height: 1.8em;
     color: #333333;
 }
 
-/* Skills page */
+/******************************* SkillsPage *************************************/
+
+div#skills::after {
+    background-image: url('../assets/picture/background-image-coding.jpg');
+}
 
 li {
   font-size: 1em;
-}
-
-img.ProfilePic {
-  border-radius: 100px;
 }
 
 section.skills {
@@ -247,6 +221,12 @@ div.skillSub ul {
 }
 
 /* Experience - timeline page */
+
+div#experience.page {
+  height: 130vh;
+}
+
+
 /* The actual timeline (the vertical ruler) */
 div.timeline {
   position: relative;
@@ -340,7 +320,11 @@ div.content {
   border-radius: 6px;
 }
 
-/* Education */
+/***************************** Education ***********************************/
+
+div#education::after {
+    background-image: url('../assets/picture/education.jpeg');
+}
 
 section.education {
   display: flex;
@@ -387,7 +371,12 @@ p.education {
   text-align: center;
 }
 
-/* Portfolio */
+/***************************** Portfolio page ***********************************/
+
+/* this is on mobile - adapt responsiveness...as for Desktop small height is oK */
+div#portfolio.page {
+  height: 200vh;
+}
 
 section.projects {
   display: flex;
@@ -448,8 +437,29 @@ div.animation {
 span.deleteCheckbox {
   float: right;
 }
+/******************************* Interests page *************************************/
 
-/* Footer */
+div#interests::after {
+    background-image: url('../assets/picture/interests.jpg');
+}
+
+/******************************* Footer *************************************/
+
+footer {
+  height: 10vh;
+}
+
+footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -464,7 +474,8 @@ ul.posts li {
     list-style: none;
 }
 
-/* All Media query for responsiveness  */
+
+/******************** Media queries for responsiveness ************************/
 
 @media only screen  and (max-width: 979px) { /* Tablet */
 

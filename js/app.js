@@ -43,7 +43,6 @@ $(document).ready(() => {
   const caption = $('.caption').get(0);
   // Get "navbar-burger" element
   const navbarBurger = $('.navbar-burger').get(0);
-  console.log(navbarBurger);
 
   //NAVBAR
   // When the user scrolls down 20px from the top of the document, slide down the navbar
@@ -66,7 +65,6 @@ $(document).ready(() => {
   $(navbarBurger).on('click', function () {
     // Get the target from the "data-target" attribute
     const target = navbarBurger.dataset.target; //should be navMenu
-    console.log(target);
     const targetElt = $(`#${target}`).get(0);
 
     // Toggle the class on both the "navbar-burger" and the "navbar-menu"
@@ -112,7 +110,6 @@ $(document).ready(() => {
     //add click even to 'Click for more details'
     clickInfo.addEventListener('click', () => {
       info.classList.toggle('animation');
-      console.log('click');
     });
     //add click even to close checkmark
     deleteCheckbox.addEventListener('click', () => {
