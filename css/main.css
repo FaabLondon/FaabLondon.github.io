@@ -520,6 +520,30 @@ ul.posts li {
 
 @media only screen  and (max-width: 768px) { /* mobile*/
 
+/* Homepage */
+
+div#home {
+  height: 40vh;
+}
+
+/* Decrease height div picture */
+#d1{
+  height: 10vh;
+  background-position: 0px -90px;
+}
+#d2{
+  height: 32.5vh;
+  background-position: -90px -40px;
+}
+#d3{
+  height: 40vh;
+  background-position: -150px 0px;
+}
+#d4{
+  height: 32.5vh;
+  background-position: -280px -27px;
+}
+
 /* Place the timelime to the left on Mobile*/
   div.timeline::after {
     left: 31px;
