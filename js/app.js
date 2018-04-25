@@ -104,16 +104,16 @@ $(document).ready(() => {
   //set click event to display more info on all projects
   const nbProject = 4;
   for (let i = 1 ; i <= nbProject; i++){
-    const clickInfo = document.querySelector(`#clickforInfo${i}`);
-    const info = document.querySelector(`#info${i}`);
-    const deleteCheckbox = document.querySelector(`#deleteCheckbox${i}`);
+    const clickInfo = $(`#clickforInfo${i}`).get(0);
+    const info = $(`#info${i}`).get(0);
+    const deleteCheckbox = $(`#deleteCheckbox${i}`).get(0);
     //add click even to 'Click for more details'
-    clickInfo.addEventListener('click', () => {
-      info.classList.toggle('animation');
+    $(clickInfo).on('click', () => {
+      $(info).toggleClass('animation');
     });
     //add click even to close checkmark
-    deleteCheckbox.addEventListener('click', () => {
-      info.classList.toggle('animation');
+    $(deleteCheckbox).on('click', () => {
+      $(info).toggleClass('animation');
     });
   }
 
