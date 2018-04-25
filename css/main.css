@@ -42,13 +42,17 @@ div.page {
   position: relative; /* for opacity */
 }
 
-h2 {
+/* h2 {
     display: inline;
+} */
+
+h1 {
+  margin-top: 10vh;
 }
 
-/* h1 {
-    margin-top: 45px;
-} */
+h1.mainTitle {
+  margin-top: 0;
+}
 
 a.chevron {
   margin: 5px auto;
@@ -99,7 +103,6 @@ div#homePage.columns.is-multiline{
 
 div#home {
   height: 80vh;
-  /* width: 77vw; */
   position: relative;
   margin-top: 10vh;
 }
@@ -191,21 +194,19 @@ div#skills::after {
     background-image: url('../assets/picture/background-image-coding.jpg');
 }
 
-li {
-  font-size: 1em;
-}
-
 section.skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 75%;
+  margin: 5vh 0;
 }
 
 div.skillSub {
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5vh 5vh;
 }
 
 h2.skillTitle {
@@ -512,6 +513,15 @@ ul.posts li {
     height: 37.5vh;
     background-size: 575px 325px;
     background-position: -270px -27px;
+  }
+
+  /* skills */
+  div#home {
+    height: 100vh;
+  }
+
+  div.skillSub {
+    margin: 1vh 0;
   }
 }
 
