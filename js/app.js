@@ -67,11 +67,11 @@ $(document).ready(() => {
     // Get the target from the "data-target" attribute
     const target = navbarBurger.dataset.target; //should be navMenu
     console.log(target);
-    const $target = $(target);
+    const targetElt = $(`#${target}`).get(0);
 
     // Toggle the class on both the "navbar-burger" and the "navbar-menu"
     $(navbarBurger).toggleClass('is-active');
-    $target.toggleClass('is-active');
+    $(targetElt).toggleClass('is-active');
   });
 
   //***************************************************************************
