@@ -373,7 +373,7 @@ div.essec {
 }
 
 div.delftLogo {
-  background-image: url('../assets/picture/tu-delft.png');
+  background-image: url('../assets/picture/tu-Delft.png');
 }
 
 div.utcLogo {
@@ -640,6 +640,7 @@ div#home {
 
   div.cardImage{
     width: 330px;
+    height: 200px;
   }
 
   /* Add some padding inside the card container */
