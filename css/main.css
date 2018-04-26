@@ -46,9 +46,6 @@ div.page {
   position: relative; /* for opacity */
 }
 
-/* h2 {
-    display: inline;
-} */
 
 h1 {
   margin: 5vh 0;
@@ -529,25 +526,26 @@ footer {
 
   /* Decrease height div picture */
   #d1{
-    height: 15vh;
-    background-size: 575px 325px;
+    height: 19vh;
+    background-size: 862px 487px;
     background-position: 0px -90px;
   }
   #d2{
-    height: 37.5vh;
-    background-size: 575px 325px;
+    height: 52vh;
+    background-size: 862px 487px;
     background-position: -90px -40px;
   }
   #d3{
-    height: 45vh;
-    background-size: 575px 325px;
+    height: 60vh;
+    background-size: 862px 487px;
     background-position: -150px 0px;
   }
   #d4{
-    height: 37.5vh;
-    background-size: 575px 325px;
+    height: 52.5vh;
+    background-size: 862px 487px;
     background-position: -270px -27px;
   }
+
 
   /* skills page */
   div.skillSub {
@@ -584,21 +582,24 @@ div#home {
 /* Decrease height div picture */
 #d1{
   height: 10vh;
+  background-size: 575px 325px;
   background-position: 0px -90px;
 }
 #d2{
   height: 32.5vh;
+  background-size: 575px 325px;
   background-position: -90px -40px;
 }
 #d3{
   height: 40vh;
+  background-size: 575px 325px;
   background-position: -150px 0px;
 }
 #d4{
   height: 32.5vh;
+  background-size: 575px 325px;
   background-position: -280px -27px;
 }
-
 
 
 /* Place the timelime to the left on Mobile*/
