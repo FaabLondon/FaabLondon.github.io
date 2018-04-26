@@ -164,7 +164,7 @@ div#home {
 }
 
 div#content.column {
-  width: 300px;
+  width: 20vw;
   letter-spacing: 5px;
   color: #777777;
   display: flex;
