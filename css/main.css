@@ -516,9 +516,6 @@ footer {
   }
 
   /* Homepage*/
-  div#homePage.columns.is-multiline{
-    margin: 0 2vw;
-  }
 
   div#home {
     height: 50vh;
