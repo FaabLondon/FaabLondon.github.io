@@ -43,6 +43,27 @@ $(document).ready(() => {
   const caption = $('.caption').get(0);
   // Get "navbar-burger" element
   const navbarBurger = $('.navbar-burger').get(0);
+  const sections = ['about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
+
+  ////Smooth TRANSITION when clicking on the different sections in the Navbar
+
+  sections.forEach( elt => {
+    $(`a[href="#${elt}"]`).click( e => {
+
+      const offset = $($(e.target.attributes[1].value).get(0)).offset();
+      //Subtract 20 from top and left:
+
+      // offset.left -= 20;
+      offset.top -= 20;
+      // Now animate the scroll-top and scroll-left CSS properties of <body> and <html>:
+
+      $('html, body').animate({
+        scrollTop: offset.top
+        // scrollLeft: offset.left
+      });
+    });
+  });
+
 
   //NAVBAR
   // When the user scrolls down 20px from the top of the document, slide down the navbar
