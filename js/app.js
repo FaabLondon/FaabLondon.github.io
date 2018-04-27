@@ -43,7 +43,7 @@ $(document).ready(() => {
   const caption = $('.caption').get(0);
   // Get "navbar-burger" element
   const navbarBurger = $('.navbar-burger').get(0);
-  const sections = ['about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
+  const sections = ['homePage', 'about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
 
   ////Smooth TRANSITION when clicking on the different sections in the Navbar
 
@@ -51,16 +51,13 @@ $(document).ready(() => {
     $(`a[href="#${elt}"]`).click( e => {
 
       const offset = $($(e.target.attributes[1].value).get(0)).offset();
-      //Subtract 20 from top and left:
-
-      // offset.left -= 20;
+      //Subtract 20 from top
       offset.top -= 20;
-      // Now animate the scroll-top and scroll-left CSS properties of <body> and <html>:
 
+      // Now animate the scroll-top CSS properties of <body> and <html>:
       $('html, body').animate({
         scrollTop: offset.top
-        // scrollLeft: offset.left
-      });
+      }, 2000);
     });
   });
 
