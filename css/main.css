@@ -123,13 +123,13 @@ div#home {
   margin-left: 0vh;
 }
 
-/* TRANSITION */
-/* #d1, #d2, #d3, #d4{
+/* TRANSITION */ */
+#d1, #d2, #d3, #d4{
    -webkit-transition: background-image 1s linear;
    -moz-transition: background-image 1s linear;
    -o-transition: background-image 1s linear;
    transition: background-image 1s linear;
-} */
+}
 
 #d1 {
   height: 25vh;
@@ -529,7 +529,6 @@ footer {
 @media only screen  and (max-width: 1023px) { /* Tablet and mobile*/
 
   .se-pre-con {
-
     background: url('../assets/picture/preloaderSmall.gif') center no-repeat #fff;
   }
 
