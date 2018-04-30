@@ -550,7 +550,7 @@ footer {
   }
 
   /* NO TRANSITION on Tablet or mobile as it keeps jumping..*/
-  #d1, #d2, #d3, #d4{
+  #d1, #d2, #d3, #d4 {
      -webkit-transition: none;
      -moz-transition: none;
      -o-transition: none;
@@ -639,7 +639,7 @@ div#home {
 }
 
 h2.caption{
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 
 /* Place the timelime to the left on Mobile*/
