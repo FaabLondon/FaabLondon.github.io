@@ -350,7 +350,7 @@ h4.clickProfile {
 /***************************** Education ***********************************/
 
 div#education::after {
-    background-image: url('../assets/picture/education.jpeg');
+    background-image: url('../assets/picture/education.png');
 }
 
 section.education {
