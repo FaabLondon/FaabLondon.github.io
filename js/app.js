@@ -1,6 +1,10 @@
-$(window).on('load', () => { //changed to window on load to make sure all images ar loaded before animating them
+$(window).on('load', () => {
+  //changed to window on load to make sure all images ar loaded before animating them
 
   console.log('JS loaded');
+
+  //pre-load animated gif
+  $('.se-pre-con').fadeOut('slow');
 
   //*****************************************************************************
 
@@ -39,8 +43,7 @@ $(window).on('load', () => { //changed to window on load to make sure all images
   }
   ];
 
-  const imgUrls = pictArray.map(elt => elt.link);
-  console.log(imgUrls);
+  //const imgUrls = pictArray.map(elt => elt.link);
 
   const sections = ['homePage', 'about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
 
