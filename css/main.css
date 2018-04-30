@@ -391,7 +391,7 @@ p.education {
 /***************************** Portfolio page ***********************************/
 
 .moreDetails{
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 section.projects {
@@ -415,7 +415,7 @@ section.projects {
 }
 
 div.cardImage{
-  height: 300px;
+  height: 250px;
   width: 400px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -459,7 +459,12 @@ span.deleteCheckbox {
 }
 
 h4 {
-  margin: 30px 0 30px 0;
+  margin: 15px 0;
+}
+
+/* list-style: initial; */
+ul.links li {
+  margin-bottom: 10px;
 }
 
 /******************************* Interests page *************************************/
