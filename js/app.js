@@ -39,6 +39,9 @@ $(window).on('load', () => { //changed to window on load to make sure all images
   }
   ];
 
+  const imgUrls = pictArray.map(elt => elt.link);
+  console.log(imgUrls);
+
   const sections = ['homePage', 'about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
 
   // DOM ELEMENTS
@@ -94,6 +97,29 @@ $(window).on('load', () => { //changed to window on load to make sure all images
 
   //***************************************************************************
   //INTRO page
+  //pre-load images for animation
+
+  function preloadCssImages(){
+    const allImgs = [];//new array for all the image urls
+    let k = 0; //iterator for adding images
+    // var sheets = document.styleSheets;//array of stylesheets
+
+    for (let i = 0; i < pictArray - 1; i++) { //loop array
+
+      const arr = $.makeArray(imgUrls);//create array from regex obj
+      $(arr).each(function(){
+        allImgs[k] = new Image(); //new img obj
+        allImgs[k].src = this;
+        k++;
+      });
+    } //loop
+    console.log('images pre-loaded');
+    return allImgs;
+  }
+
+  //call function
+  preloadCssImages();
+
   //initialise backgroundImage and caption
   let picCaption = 0;
   $($destructuredPic).each((i, elt) => {
