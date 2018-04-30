@@ -110,12 +110,12 @@ div#home {
 }
 
 /* TRANSITION */
-#d1, #d2, #d3, #d4{
+/* #d1, #d2, #d3, #d4{
    -webkit-transition: background-image 1s linear;
    -moz-transition: background-image 1s linear;
    -o-transition: background-image 1s linear;
    transition: background-image 1s linear;
-}
+} */
 
 #d1 {
   height: 25vh;
