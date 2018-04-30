@@ -1,9 +1,10 @@
-$(document).ready(() => {
+$(window).on('load', () => { //changed to window on load to make sure all images ar loaded before animating them
 
   console.log('JS loaded');
 
   //*****************************************************************************
-  //Variables and DOM elements
+
+  //Variables
   const pictArray = [{
     link: '../assets/picture/coding.png',
     caption: 'Web developer'
@@ -38,15 +39,16 @@ $(document).ready(() => {
   }
   ];
 
+  const sections = ['homePage', 'about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
+
+  // DOM ELEMENTS
   //select the divs to set their backgroundImage and change text
   const $destructuredPic = $('.destructuredPic');
   const caption = $('.caption').get(0);
   // Get "navbar-burger" element
   const navbarBurger = $('.navbar-burger').get(0);
-  const sections = ['homePage', 'about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
 
   ////Smooth TRANSITION when clicking on the different sections in the Navbar
-
   sections.forEach( elt => {
     $(`a[href="#${elt}"]`).click( e => {
 
@@ -107,7 +109,7 @@ $(document).ready(() => {
       $(elt).css({ backgroundImage: `url(${pictArray[picCaption].link})` });
     });
 
-    // change caption text and then fadeIn fadeOut with next one
+    // change caption text and then fadeIn fadeOut with next text
     $(caption).fadeOut(0, () => {
       $(caption).text(pictArray[picCaption].caption);
       $(caption).fadeIn(1000);
