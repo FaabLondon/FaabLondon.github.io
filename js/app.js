@@ -53,6 +53,7 @@ $(window).on('load', () => {
   const caption = $('.caption').get(0);
   // Get "navbar-burger" element
   const navbarBurger = $('.navbar-burger').get(0);
+  const $navLink = $('.navLink');
 
   ////Smooth TRANSITION when clicking on the different sections in the Navbar
   sections.forEach( elt => {
@@ -87,8 +88,7 @@ $(window).on('load', () => {
   }
 
   //Burger menu toggling on device
-  // Add  a click event ot NavBar Burger
-  $(navbarBurger).on('click', function () {
+  function toggle() {
     // Get the target from the "data-target" attribute
     const target = navbarBurger.dataset.target; //should be navMenu
     const targetElt = $(`#${target}`).get(0);
@@ -96,7 +96,13 @@ $(window).on('load', () => {
     // Toggle the class on both the "navbar-burger" and the "navbar-menu"
     $(navbarBurger).toggleClass('is-active');
     $(targetElt).toggleClass('is-active');
-  });
+  }
+
+  // Add  a click event ot NavBar Burger and on each navLink - each did not work
+  $(navbarBurger).on('click', toggle);
+  for ( let i = 0; i < $navLink.length - 1 ; i++) {
+    $($navLink[i]).on('click', toggle);
+  }
 
   //***************************************************************************
   //INTRO page
