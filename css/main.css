@@ -531,6 +531,14 @@ footer {
     margin: 10vh auto 0;
   }
 
+  /* NO TRANSITION on Tablet or mobile as it keeps jumping..*/
+  #d1, #d2, #d3, #d4{
+     -webkit-transition: none;
+     -moz-transition: none;
+     -o-transition: none;
+     transition: none;
+  }
+
   /* Decrease height div picture */
   #d1{
     height: 19vh;
