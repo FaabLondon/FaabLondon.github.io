@@ -45,7 +45,7 @@ $(window).on('load', () => {
 
   const imgUrls = pictArray.map(elt => elt.link);
 
-  const sections = ['homePage', 'about', 'skills', 'experience', 'education', 'portfolio', 'interests', 'contacts' ];
+  const sections = ['homePage', 'about', 'skills', 'portfolio', 'education', 'experience', 'interests', 'contacts' ];
 
   // DOM ELEMENTS
   //select the divs to set their backgroundImage and change text
