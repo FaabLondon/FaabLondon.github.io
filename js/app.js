@@ -11,7 +11,7 @@ $(window).on('load', () => {
   //Variables
   const pictArray = [{
     link: '../assets/picture/coding.png',
-    caption: 'Web developer'
+    caption: 'Full-Stack Web Developer'
   },
   {
     link: '../assets/picture/paris.jpg',
